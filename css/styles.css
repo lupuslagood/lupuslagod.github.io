@@ -1,0 +1,83 @@
+.fixed-header {
+    background-image: linear-gradient(to right, black, red, black);
+
+}
+
+.h-hmenu {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hmenu-item {
+    display: inline;
+    float: right;
+}
+
+.hmenu-item a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.hmenu-item a:hover {
+    background-color: black;
+    color: rgba(0, 255, 0);
+}
+
+
+.slogan {
+    padding-top: 10px;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: max-width;
+    border-radius: 25px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.slogan-h1 {
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 1px;
+    line-height: 1;
+    letter-spacing: 0.0001px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width:670px) {
+
+    .right,
+    .left {}
+}
+
+.misc {
+    width: max-width;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30%;
+}
+
+.footer {
+    position: relative;
+    background-color: gray;
+    margin-top: 10%;
+}
+
+body {
+    background-image: linear-gradient(black, red, white 100%);
+}
