@@ -78,6 +78,6 @@
     margin-top: 10%;
 }
 
-body {
+.body {
     background-image: linear-gradient(black, red, white 100%);
 }
