@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Player</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body class="plyr">
+
+    <div class="player">
+
+        <div class="details">
+            <div class="now-playing"> PLAYING x OF y
+            </div>
+            <div class="track-art"></div>
+            <div class="track-name"></div>
+            <div class="track-artist"></div>
+        </div>
+
+        <div class="buttons">
+
+            <div class="prev" onclick="prevTrack();">
+                <img class="fa-step-backward" src="images/angle-left.svg"></img>
+            </div>
+
+            <div class="playpause-track" onclick="playpause()">
+                <img class="fa-play-circle" src="images/play-circle.svg"></img>
+            </div>
+
+            <div class="next" onclick="nextTrack();">
+                <img class="fa-step-forward" src="images/angle-right.svg"></img>
+            </div>
+
+        </div>
+
+        <div class="slider-cotainer">
+
+            <div class="current-time">00:00 </div>
+            <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+            <div class="duration">00:00</div>
+
+        </div>
+
+    </div>
+    <script src="scripts/82b71ec9.js"></script>
+</body>
+
+</html>
