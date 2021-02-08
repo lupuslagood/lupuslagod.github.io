@@ -1,0 +1,95 @@
+.fixed-header {
+    background-image: linear-gradient(to right, black, red, black);
+
+}
+
+.h-hmenu {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hmenu-item {
+    display: inline;
+    float: right;
+}
+
+.hmenu-item a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.hmenu-item a:hover {
+    background-color: black;
+    color: rgba(0, 255, 0);
+}
+
+
+.slogan {
+    background-image: linear-gradient(black, red, white 100%);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.left {
+    width: 50%;
+    float: left;
+    border-right: 2px solid rgb(0, 255, 0);
+    border-radius: 25px;
+    height: 450px;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    border-left: 2px solid rgb(0, 255, 0);
+    border-radius: 25px;
+    height: 450px;
+}
+
+.slogan-h1 {
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 1px;
+    line-height: 1;
+    letter-spacing: 0.0001px;
+    color: white;
+    width: 100%;
+}
+
+.slogan-h4 {
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.0001px;
+    color: white;
+    width: 100%
+}
+
+@media screen and (min-width:670px) {
+
+    .right,
+    .left {}
+}
+
+.misc {
+    margin-top: 600px;
+
+    width: max-width;
+    background-image: linear-gradient(to right, black, white);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer {
+    background-color: gray;
+}

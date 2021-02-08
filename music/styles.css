@@ -1,0 +1,7 @@
+.main-header {
+    position: fixed;
+    background-image: linear-gradient(to right, black, red, black);
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+}
