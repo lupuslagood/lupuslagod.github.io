@@ -79,14 +79,14 @@ function playpause() {
 function playTrack() {
     current_track.play();
     isPlaying = true;
-    playpause_btn.innerHTML = '<img class="fa-play-circle" src="pause-circle.svg"></img>';
+    playpause_btn.innerHTML = '<img class="fa-play-circle" src="images/pause-circle.svg"></img>';
 
 }
 
 function pauseTrack() {
     current_track.pause();
     isPlaying = false;
-    playpause_btn.innerHTML = '<img class="fa-pause-circle" src="play-circle.svg"></img>';
+    playpause_btn.innerHTML = '<img class="fa-pause-circle" src="images/play-circle.svg"></img>';
 
 }
 
