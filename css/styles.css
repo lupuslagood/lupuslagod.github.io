@@ -34,7 +34,7 @@
     padding-top: 10px;
     overflow: hidden;
     display: flex;
-    height: auto;
+    height: max-height;
 }
 
 .left {
