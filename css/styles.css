@@ -75,10 +75,9 @@
     width: 100%
 }
 
-@media screen and (min-width:670px) {
+@media screen and (min-width:400px) {
 
-    .right,
-    .left {}
+    .right {}
 }
 
 .misc {
