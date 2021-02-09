@@ -3,58 +3,198 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <title>test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Zeus test</title>
 </head>
 
-<body">
-    <nav class="navbar navbar-expand-sm  fixed-header" style="justify-content: flex-end;">
-        <a class="navbar-brand" href="#zeus" style="justify-content: flex-end;">
-            Zeus
-        </a>
+<body class="main-content">
+    <header>
+        <nav class="navbar navbar-inverse nav-background">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#Home">
+                        ZEUS
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav navbar-nav">
 
-        <ul class="nav-tabs navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="player.html"> <img src="images/music.svg" width="100" height="70"> </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutus"> About us </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#signup"> Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Login"> Login </a>
-            </li>
-        </ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                About
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="first leaf">
+                                    <a href="#project" title="The Zeus Project">Zeus Project</a>
+                                </li>
+                                <li class="last leaf">
+                                    <a href="#License">License </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Services
+                                <span class="caret"></span>
+                            </a>
 
-    </nav>
-    <div class="container slogan left">
-        <h1 class="slogan-h1">Kenyan Music <br /> In<br /> Your Hands</h1>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#bugs">Report A Bug</a>
+                                </li>
+                                <li>
+                                    <a href="#features">Request A Feature </a>
+                                </li>
+                                <li>
+                                    <a href="#forums">Forum </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Community
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#donate" title="Help Us Grow">Donate To Us</a>
+                                </li>
+                                <li>
+                                    <a href="#patron">Become A Patron</a>
+                                </li>
+                                <li>
+                                    <a href="#sponsors">Become A Sponsor</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li> <a href="#"> Download </a> </li>
+
+                        <li> <a href="#news">News</a> </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <a href="#Login">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Login
+                            </a>
+                        </li>
+                        <li> <a href="signup.html">
+                                <span class="glyphicon glyphicon-log-in"></span>
+                                Signup
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid main-content">
+
+        <div class="container">
+            <h1 class="slogan-h1">Kenyan Music In Your Hands</h1>
+        </div>
+        <div class="container">
+            <h2 class="slogan-h2">Anywhere Anytime </h2>
+
+        </div>
+        <div class="container">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/artists/avril.jpeg" alt="avril" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Avril</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/Fena.jpg" alt="fena" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Fena Gitu</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/Khaligraph-Jones.png" alt="jones" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Khaligraph Jones</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/masauti.jpg" alt="masauti" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Masauti</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/nyashinski.jpeg" alt="nyashinski" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Nyashinski</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/octopizzo.jpeg" alt="octopizzo" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Octopizzo</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/rosa.jpeg" alt="rosa" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Rosa Ree</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/artists/sauti_sol.jpeg" alt="sauti_sol" style="width:100%; height:600px;">
+                        <div class="carousel-caption">
+                            <h3>Sauti Soul</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
     </div>
-    <div class="container misc">
-        <ul class="nav-tabs ">
-            <li class="nav-item">
-                <a class="nav-link" href="#premium">Premium</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#support">Support Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#gossip">Celebrity Gossip</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#download"> Download </a>
-            </li>
-        </ul>
-    </div>
 
-    <footer class="footer"> 2021. Zeus. All Rights Reserved</footer>
-
-
-    </body>
+    <footer style="background: gray;">Zeus. All rights reserved. 2021</footer>
+</body>
 
 </html>
