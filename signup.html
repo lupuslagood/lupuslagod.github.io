@@ -4,17 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Join Zeus</title>
 </head>
 
 <body>
-    <form autocomplete="off" id="signup-form">
-        <label name="user[login]" autocapitalize="off" autofocus="autofocus" required="required" for="user_login">
-            Username
-        </label>
+    <div class="p-responsive mt-4 mt-md-8">
+        <div class="mb-4 mb-md-8 container-md">
+            <div class="text-mono text-center text-gray-light text-normal mb-3">
+                Join Zeus
+            </div>
+            <div class="container-sm">
+                <noscript>
+                    <p class="bg-danger">Zeus Requires JavaScript enabled during sign up.
+                        Please enable Javascript in your browser settings</p>
+                </noscript>
+                <form class="setup-form" method="post" action="#" autocomplete="off" id="signup_form" accept-charset="UTF-8">
+                    <dl class="form-group my-3 required">
+                        <dt class="input_label">
+                            <label for="user_login" name="user[login]" autofocus required>
+                                Username
+                            </label>
+                        </dt>
+                        <dd>
+                            <input name="user[login]" class="form-control input py-1 " type="text" id="user_login" placeholder="username" required>
+                        </dd>
+                    </dl>
+                    <dl class="form-group my-3 required">
+                        <dt class="input-label">
+                            <label for="email" name="email" required>
+                                Email
+                            </label>
+                        </dt>
+                        <dd>
+                            <input name="email" class="form-control input py-1" type="text" id="user_email" placeholder="Email" required>
+                        </dd>
+                    </dl>
+                    <password-strength minimum-character-count="8" passphrase-length="15" invalid-message="Password Is Invalid" error-class="text-red text-bold" pass-class="text-green">
 
-    </form>
+                        <dl class="form-group my-3 required">
+                            <dt>
+                                <label for="password" name="password" required>
+                                    Password
+                                </label>
+                            </dt>
+                            <dd>
+                                <input name="password" class="form-control input py-1" type="password" id="password" placeholder="password">
+                            </dd>
 
+                        </dl>
+                    </password-strength>
+                    <p class="note mb-3">
+                        Make
+                    </p>
+                </form>
+            </div>
+        </div>
 </body>
 
 </html>
